@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.MuiBadge-badge {
+  width: 5px !important;
+  height: 17px !important;
+}
+
+.ReactCollapse--collapse {
+  transition: height 300ms;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply !bg-white !text-gray-700 !transition !duration-200;
+  top: 57% !important;
+  width: 35px !important;
+  height: 35px !important;
+  border: 1px solid rgb(126, 120, 120) !important;
+  border-radius: 100% !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 15px !important;
+  font-weight: bold !important;
+}
+
+
+.btn-blue {
+  background-color: #3872fa !important;
+  color: #fff !important;
+  padding: 7px 13px;
+  font-size: large;
+
+}
+
+.btn-blue:hover {
+  color: #3872fa !important;
+  background-color: #fff !important;
+  border: 1px solid #3872fa;
+}
+
+.MuiAppBar-colorPrimary {
+  background-color: #f5f5f5 !important;
+  color: #000 !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.MuiTableCell-head {
+  font-weight: 600 !important;
+  text-transform: uppercase;
+}
+
+.react-international-phone-input{
+  width: 100% !important;
+  padding: 10px !important;
+  font-size: 15px !important;
+}
+
+.css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input{
+  padding: 8px !important;
+}
+
+.css-rx15nw-MuiTableContainer-root{
+  height: 650px !important;
+  max-height: 650px !important;
+}
+
+/* Custom style to reposition vertical navigation buttons */
+ .zoomPructThumbs .swiper-button-prev,
+.zoomPructThumbs .swiper-button-next {
+  left: 50% !important;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 9999px;
+  z-index: 20;
+}
+
+.zoomPructThumbs .swiper-button-prev {
+  top: 40px !important;
+}
+
+.zoomPructThumbs .swiper-button-next {
+  bottom: 0 !important;
+  top: auto !important;
+} 
+
+
+

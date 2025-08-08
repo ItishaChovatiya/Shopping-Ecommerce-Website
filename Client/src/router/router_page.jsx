@@ -1,0 +1,18 @@
+export const router_page = {
+  ProductListing: "/productListing",
+  ProductDetail: "/productDetail/:id",
+  Login: "/Login",
+  register: "/Register",
+  VerifyEmail: "/Verify",
+  ResetPass: "/ResetPass",
+  Cart: "/cart",
+  checkOut: "/checkout",
+  blogDetail: "/Blog/Details/:id",
+  accountSildebarStruc: "/Account",
+  myAccount: "myAccount",
+  myOrder: "myOrder",
+  AddAddressDetail: "AddAddressData/:id?",
+  myListPage: "myList",
+  SuccessOrder: "/Order/Success",
+  FailedOrder: "/Order/Failed",
+};

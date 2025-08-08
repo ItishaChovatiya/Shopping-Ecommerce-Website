@@ -10,26 +10,19 @@ const ConnectDB = require("./Config/DBconnection");
 
 const app = express();
 
-app.use(cors());          //Allow frontend (like React) to call backend API   Without it	Browser blocks the request as unsafe
-
-
-// app.use(cors({
-//   origin: 'http://localhost:5713', // only allow React app
-// }));
-
+app.use(cors());        
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }))//By This Line Form Data Can Not Read By Express AND withOut this line req.body is undefined
+app.use(express.urlencoded({ extended: true }))
 
-dotenv.config();   //access environment variable 
+dotenv.config();  
 
-app.use(cookieParser());  //Lets you read cookies from req.cookies  Without it	req.cookies will be undefined
-
-app.use(morgan("tiny"));  //middleware that log all the details when api hit to the server like url,time,method,reqests,error,status
+app.use(cookieParser()); 
+app.use(morgan("tiny"));  
 
 app.use(
-  helmet({            //	Adds secure HTTP headers
-    crossOriginResourcePolicy: false,  //	Allows loading resources (like images) from other domains
+  helmet({    
+    crossOriginResourcePolicy: false,  
   })
 );
 
@@ -43,8 +36,4 @@ app.listen(process.env.PORT, () => {
 
 
 
-//"Enum" (short for enumeration) is a special data type used to define a set of named constants
 
-//DB NAME : itishabvminfotech,
-//DB PASSWORD : itishabvminfotech2705
-//URL : mongodb+srv://itishabvminfotech:itishabvminfotech2705@ecomerceapp.jnsdvix.mongodb.net/
